@@ -3,22 +3,22 @@ var city = prompt("Enter a city name:");
 
 var queryURL = "http://api.openweathermap.org/data/2.5/weather?q=" + city + "&appid=" + APIKey;
 
-api.openweathermap.org/data/2.5/weather?q={city}&appid={APIKey}
+api.openweathermap.org / data / 2.5 / weather ? q = { city } & appid:APIKey={ APIKey }
 
 fetch(queryURL)
-.then(function(response) {
-    // Handle the response from the API
-    return response.json();
-  })
-  .then(function(data) {
-    // Use the data returned by the API
-    console.log(data);
-    // Add your code to handle the weather data here
-  })
-  .catch(function(error) {
-    // Handle any errors that occur during the fetch request
-    console.log("Error:", error);
-  });
+    .then(function (response) {
+        // Handle the response from the API
+        return response.json();
+    })
+    .then(function (data) {
+        // Use the data returned by the API
+        console.log(data);
+        // Add your code to handle the weather data here
+    })
+    .catch(function (error) {
+        // Handle any errors that occur during the fetch request
+        console.log("Error:", error);
+    });
 // ajust app to accept user input to store in city var use a prompt or an input field to get the city name from the user.
 
 /*      TODO:
